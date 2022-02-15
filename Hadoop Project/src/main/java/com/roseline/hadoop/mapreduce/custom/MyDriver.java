@@ -17,7 +17,6 @@ public class MyDriver {
             }
 
             Configuration conf = new Configuration();
-            String[] remainingArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
 
             Job job = Job.getInstance(conf, "Mapper with Custom InputFormat");
 
