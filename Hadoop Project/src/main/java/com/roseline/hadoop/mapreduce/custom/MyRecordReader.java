@@ -20,9 +20,9 @@ public class MyRecordReader extends RecordReader <SensorKey, SensorValue> {
 
     @Override
     public boolean nextKeyValue() throws IOException, InterruptedException {
-        boolean gotNextKeyValue = recordReader.nextKeyValue();
+        boolean hasNextKeyValue = recordReader.nextKeyValue();
 
-        if (gotNextKeyValue) {
+        if (hasNextKeyValue) {
             if (key == null) { key = new SensorKey(); }
             if (value == null) { value = new SensorValue(); }
 
