@@ -69,7 +69,7 @@ public class ReduceJoin {
                 System.exit(job.waitForCompletion(true) ? 0 : 1);
 
             } catch (IOException | InterruptedException | ClassNotFoundException e) {
-                System.out.println(e);
+                System.out.println(e.getMessage());
             }
         }
     }
